@@ -1,4 +1,4 @@
-# JavaAzureMLClient
+# Java Azure ML Client
 An Azure ML Endpoint Client for Java and Android
 
 ##Sample Code 
