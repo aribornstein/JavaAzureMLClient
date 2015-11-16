@@ -17,15 +17,15 @@ public class AzureMLClient
       /*
        Takes an Azure ML Request Body then Returns the Response String Which Contains Scored Lables etc
       */
-      public static String RequestResponse( String requestBody ) throws Exception
+      public static String requestResponse( String requestBody ) throws Exception
       {
         URL u = new URL(this.endPointURL);
         HttpURLConnection conn = (HttpURLConnection) u.openConnection();
 
         conn.setRequestProperty("Authorization","Bearer "+ this.key);
         conn.setRequestProperty("Content-Type","application/json");
-        
         conn.setRequestMethod("POST");
+        
         String body= new String(requestBody);
         
         conn.setDoOutput(true);
@@ -40,10 +40,10 @@ public class AzureMLClient
         String responseString="";    
 
         while ((decodedString = in.readLine()) != null) 
-    	{
+    	  {
             response+=decodedString;
         }
-    	return responseString;
+    	  return responseString;
      }
 
   }
