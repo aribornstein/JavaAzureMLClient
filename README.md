@@ -1,7 +1,7 @@
 # JavaAzureMLClient
 An Azure ML Endpoint Client for Java and Android
 
-##Sample Use 
+##Sample Code 
 Note you will need to use your own service.
 ```java
 
